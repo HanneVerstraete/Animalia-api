@@ -1,0 +1,80 @@
+{
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "indent": ["error", "tab"],
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "comma-dangle": ["error", "never"],
+      "arrow-parens": ["error", "always"],
+      "brace-style": ["error", "1tbs", {
+        "allowSingleLine": false
+      }],
+      "no-inner-declarations": "off",
+      "no-console": "warn",
+      "object-curly-newline": ["error", {
+        "consistent": true
+      }],
+      "function-paren-newline": ["error", "consistent"],
+      "multiline-ternary": "off",
+      "func-style": ["error", "declaration", {
+        "allowArrowFunctions": true
+      }],
+      "no-fallthrough": "off",
+      "array-element-newline": "off",
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": "error",
+    //   "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
+      "no-extra-parens": "off",
+      "@typescript-eslint/no-extra-parens": [
+        "warn",
+        "all",
+        {
+          "ignoreJSX": "multi-line"
+        }
+      ]
+    },
+    "globals": {
+      "Promise": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.js",
+          "*.jsx"
+        ],
+        "rules": {
+          "@typescript-eslint/explicit-module-boundary-types": "off" // Don't run typescript lint on JS files
+        }
+      }
+    ]
+  }
