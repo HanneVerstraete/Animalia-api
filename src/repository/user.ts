@@ -3,7 +3,7 @@ import { tables, getKnex } from '../data';
 const findAll = () => {
 	return getKnex()(tables.user)
 		.select()
-		.orderBy('index', 'ASC');
+		.orderBy('id', 'ASC');
 };
 
 const findById = (id: string) => {

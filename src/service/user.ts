@@ -3,10 +3,7 @@ import ServiceError from '../core/serviceError';
 
 const getAll = async () => {
 	const data = await userRepository.findAll();
-	return {
-		data,
-		count: data.length,
-	};
+	return data;
 };
 
 const getById = async (id: string) => {

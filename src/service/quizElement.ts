@@ -3,10 +3,7 @@ import ServiceError from '../core/serviceError';
 
 const getAll = async () => {
 	const data = await quizElementRepository.findAll();
-	return Promise.resolve({ 
-		data: data, 
-		count: data.length
-	});
+	return Promise.resolve(data);
 };
 
 const getByIndex = async (index: number) => {
