@@ -12,7 +12,14 @@ const findById = (id: string) => {
 		.first();
 };
 
+const findByEmail = (email: string) => {
+	return getKnex()(tables.user)
+		.where('email', email)
+		.first();
+};
+
 export default {
 	findAll,
-	findById
+	findById,
+	findByEmail
 };

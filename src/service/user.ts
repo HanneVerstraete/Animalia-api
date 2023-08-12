@@ -16,7 +16,18 @@ const getById = async (id: string) => {
 	return user;
 };
 
+const getByEmail = async (email: string) => {
+	const user = await userRepository.findByEmail(email);
+
+	if (!user) {
+		throw ServiceError.notFound(`No user with email ${email} exists`);
+	}
+
+	return user;
+};
+
 export default {
 	getAll,
-	getById
+	getById,
+	getByEmail
 };

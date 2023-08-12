@@ -10,13 +10,17 @@ const getUserById = async (ctx: Context) => {
 	ctx.body = await userService.getById(ctx.params.id);
 };
 
+const getUserByEmail = async (ctx: Context) => {
+	ctx.body = await userService.getByEmail(ctx.params.email);
+};
+
 export function installUserRouter(app: any) {
 	const router = new UserRouter({
 		prefix: '/users'
 	});
 
 	router.get('/', getAllUsers);
-	router.get('/:id', getUserById);
+	router.get('/:email', getUserByEmail);
 
 	app.use(router.routes()).use(router.allowedMethods());
 }

@@ -8,6 +8,12 @@ module.exports = {
 				.unique()
 				.primary();
 
+			table.string('firstName');
+
+			table.string('lastName');
+
+			table.string('email');
+
 			table.integer('lastLessonIndex');
 
 			table.integer('lastQuestionIndex');
