@@ -12,6 +12,8 @@ exports.seed = async (knex: Knex) => {
 			email: 'hanne.verstraete@student.hogent.be',
 			lastLessonIndex: 1,
 			lastQuestionIndex: 2,
+			xp: 20,
+			level: 10
 		},
 		{
 			id: '7f28c5f9-d711-4cd6-ac15-d13d71abff81',
@@ -20,6 +22,8 @@ exports.seed = async (knex: Knex) => {
 			email: 'test1@mail.com',
 			lastLessonIndex: 1,
 			lastQuestionIndex: 1,
+			xp: 0,
+			level: 1
 		},
 		{
 			id: '7f28c5f9-d711-4cd6-ac15-d13d71abff82',
@@ -28,6 +32,8 @@ exports.seed = async (knex: Knex) => {
 			email: 'test2@mail.com',
 			lastLessonIndex: 1,
 			lastQuestionIndex: 2,
+			xp: 5,
+			level:1
 		}
 	]);
 };

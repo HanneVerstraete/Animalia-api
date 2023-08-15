@@ -17,6 +17,10 @@ module.exports = {
 			table.integer('lastLessonIndex');
 
 			table.integer('lastQuestionIndex');
+
+			table.integer('xp')
+
+			table.integer('level')
 		});
 	},
 	down: (knex: Knex) => {
