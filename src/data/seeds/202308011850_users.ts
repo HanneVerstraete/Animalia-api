@@ -10,8 +10,8 @@ exports.seed = async (knex: Knex) => {
 			firstName: 'Hanne',
 			lastName: 'Verstraete',
 			email: 'hanne.verstraete@student.hogent.be',
-			lastLessonIndex: 1,
-			lastQuestionIndex: 2,
+			lastLessonIndex: 0,
+			lastQuestionIndex: 0,
 			xp: 20,
 			level: 10
 		},
