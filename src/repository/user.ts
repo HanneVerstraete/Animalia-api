@@ -20,12 +20,13 @@ const findByEmail = (email: string) => {
 		.first();
 };
 
-const updateById = async (id: string, user: User) => {
+const updateById = async (userId: string, user: User) => {
+	const {id, ...rest} = user;
 	try {
 		await getKnex()(tables.user)
-			.update(user)
-			.where('id', id);
-		return await findById(id);
+			.update(rest)
+			.where('id', userId);
+		return await findById(userId);
 	} catch (error) {
 		const logger = getChildLogger('users-repo');
 		logger.error('Error in updateById', {
