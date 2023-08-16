@@ -1,5 +1,6 @@
 import userRepository from '../repository/user';
 import ServiceError from '../core/serviceError';
+import { User } from '../types/User';
 
 const getAll = async () => {
 	const data = await userRepository.findAll();
@@ -26,8 +27,13 @@ const getByEmail = async (email: string) => {
 	return user;
 };
 
+const updateById = async (id: string, user: User) => {
+	return userRepository.updateById(id, user);
+};
+
 export default {
 	getAll,
 	getById,
-	getByEmail
+	getByEmail,
+	updateById
 };
