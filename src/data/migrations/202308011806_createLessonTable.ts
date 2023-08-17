@@ -13,6 +13,8 @@ module.exports = {
 			table.string('title');
 
 			table.text('content');
+
+			table.text('imageUrl');
 		});
 	},
 	down: (knex: Knex) => {
