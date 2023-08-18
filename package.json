@@ -11,7 +11,7 @@
     "npm": "8.7.0"
   },
   "scripts": {
-    "start": "npx env-cmd nodemon build/src/index.js",
+    "start": "npx env-cmd -f ./config/production.ts nodemon build/src/index.js",
     "start:local": "npx env-cmd nodemon src/index.ts",
     "postinstall": "tsc",
     "web": "node build/src/index.js",
