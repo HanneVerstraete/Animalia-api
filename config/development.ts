@@ -9,6 +9,7 @@ export default {
 		origins: ['http://localhost:3000'],
 		maxAge: 3 * 60 * 60
 	},
+	port: 9000,
 	database: {
 		client: 'mysql2',
 		host: 'localhost',

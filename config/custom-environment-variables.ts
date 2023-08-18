@@ -1,5 +1,6 @@
 export default {
 	env: 'NODE_ENV',
+	port: 'PORT',
 	database: {
 		host: 'DATABASE_HOST',
 		port: 'DATABASE_PORT',
