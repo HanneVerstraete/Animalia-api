@@ -12,8 +12,8 @@ exports.seed = async (knex: Knex) => {
 			email: 'hanne.verstraete@student.hogent.be',
 			lastLessonIndex: 0,
 			lastQuestionIndex: 0,
-			xp: 20,
-			level: 10
+			xp: 0,
+			level: 1
 		},
 		{
 			id: '7f28c5f9-d711-4cd6-ac15-d13d71abff81',
