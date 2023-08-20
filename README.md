@@ -18,7 +18,7 @@ DATABASE_HOST="localhost"
 DATABASE_PORT=3306
 ```
 
-Update the username and password with the credentials of your local database.
+Install MySQL Workbench. Update the username and password with the credentials of your local database.
 
 ## How to start
 
