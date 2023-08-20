@@ -23,4 +23,5 @@ Install MySQL Workbench. Update the username and password with the credentials o
 ## How to start
 
 Run the app with `npm start:local`.
+The app that uses this api can be found at: https://github.com/HanneVerstraete/Animalia
 
