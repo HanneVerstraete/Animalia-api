@@ -19,9 +19,9 @@ exports.seed = async (knex: Knex) => {
 			id: '7f28c5f9-d711-4cd6-ac15-d13d71abff81',
 			firstName: 'firstName1',
 			lastName: 'lastName1',
-			email: 'test1@mail.com',
-			lastLessonIndex: 1,
-			lastQuestionIndex: 1,
+			email: 'testuser@gmail.com',
+			lastLessonIndex: 0,
+			lastQuestionIndex: 0,
 			xp: 0,
 			level: 1
 		},
